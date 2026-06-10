@@ -44,7 +44,7 @@ async def loop_spam():
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
             # 2. BIBILANG NG 5 MINUTO (300 SECONDS) BAGO BURAHIN
-            await asyncio.sleep(300)
+            await asyncio.sleep(120)
 
             # 3. BURAHIN PAGKATAPOS NG 5 MINUTO
             await bot.delete_message(
