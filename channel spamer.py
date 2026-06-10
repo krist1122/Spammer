@@ -13,7 +13,7 @@ MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v2.8.0</b>
 
 <a href="https://t.me/KAZELIDERMODS/2001"> 📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 </a>v̶̶2̶.̶8̶.̶0̶
 ✓ ᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ ᴄʀᴀᴄᴋ 🤭
-✓ ᴍʟʙʙ ᴠɪᴘ ᴋᴇʏ: ʙᴜʏ ɴᴏᴡ! ɴᴏ ꜰʀᴇᴇ!
+✓ ᴍshared_ʟʙʙ ᴠɪᴘ ᴋᴇʏ: ʙᴜʏ ɴᴏᴡ! ɴᴏ ꜰʀᴇᴇ!
 
 mlbb issues need help?
 Message: <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>"""
@@ -25,7 +25,8 @@ CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎
 ALL_MESSAGES = [MLBB_MESSAGE, CODM_MESSAGE]
 
 async def loop_spam():
-    print("Spammer bot started (Alternating MLBB and CODM + 5 mins delay)...")
+    # In-update ang log message para sa 2 minutes
+    print("Spammer bot started (Alternating MLBB and CODM + 2 mins delay)...")
     index = 0
     
     while True:
@@ -43,10 +44,12 @@ async def loop_spam():
             )
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
-            # 2. BIBILANG NG 5 MINUTO (300 SECONDS) BAGO BURAHIN
+            # ========================================================
+            # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
+            # ========================================================
             await asyncio.sleep(120)
 
-            # 3. BURAHIN PAGKATAPOS NG 5 MINUTO
+            # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
             await bot.delete_message(
                 chat_id=CHANNEL_ID,
                 message_id=sent_message.message_id
