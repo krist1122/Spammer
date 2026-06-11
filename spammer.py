@@ -8,7 +8,7 @@ CHANNEL_ID = "@KAZELIDERMODS"
 
 bot = Bot(token=BOT_TOKEN)
 
-# 1. TEMPLATE PARA SA MLBB
+# 1. TEMPLATE PARA SA MLBB UPDATE
 MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v2.8.0</b>
 
 <a href="https://t.me/KAZELIDERMODS/2001"> 📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 </a>v̶̶2̶.̶8̶.̶0̶
@@ -18,20 +18,28 @@ MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v2.8.0</b>
 mlbb issues need help?
 Message: <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>"""
 
-# 2. TEMPLATE PARA SA CODM (Naka-link sa post /380)
+# 2. TEMPLATE PARA SA CODM
 CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎𝘈𝘙𝘌𝘕𝘈 𝘍𝘙𝘌𝘌 𝘛𝘙𝘐𝘈𝘓...</a>"""
 
-# Inilagay natin sa isang listahan para magsalitan sila
-ALL_MESSAGES = [MLBB_MESSAGE, CODM_MESSAGE]
+# 3. BAGONG TEMPLATE PARA SA PROMO (Naka-Quote gamit ang blockquote HTML tags)
+PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt; (𝘔𝘓𝘉𝘉 𝘝𝘪𝘗)
+
+   𝘍𝘜𝘓𝘓 𝘝𝘌𝘙𝘚𝘐𝘖𝘕 𝘞𝘐𝘛𝘏 𝘉𝘠𝘗𝘈𝘚𝘚!!
+
+₱599 || $10.16 &gt; 30𝘋𝘈𝘠𝘚 &lt; 
+
+𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>
+💥 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘣𝘦 𝘳𝘦𝘴𝘦𝘭𝘭𝘦𝘳?</blockquote>"""
+
+# Tatlo na silang magpapalit-palit ngayon sa listahan
+ALL_MESSAGES = [MLBB_MESSAGE, CODM_MESSAGE, PROMO_MESSAGE]
 
 async def loop_spam():
-    # In-update ang log message para sa 2 minutes
-    print("Spammer bot started (Alternating MLBB and CODM + 2 mins delay)...")
+    print("Spammer bot started (Alternating MLBB, CODM, and PROMO + 2 mins delay)...")
     index = 0
     
     while True:
         try:
-            # Pipiliin kung MLBB o CODM ang isesend base sa ikot ng loop
             current_message = ALL_MESSAGES[index % len(ALL_MESSAGES)]
             
             # 1. IPAPALAPAG ANG CURRENT MESSAGE
@@ -40,14 +48,12 @@ async def loop_spam():
                 text=current_message,
                 parse_mode="HTML",
                 disable_notification=False,
-                link_preview_options=LinkPreviewOptions(is_disabled=True) # Pinatay ang preview para malinis
+                link_preview_options=LinkPreviewOptions(is_disabled=True)
             )
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
-            # ========================================================
             # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
-            # ========================================================
-            await asyncio.sleep(300)
+            await asyncio.sleep(5)
 
             # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
             await bot.delete_message(
@@ -59,7 +65,6 @@ async def loop_spam():
             # 4. AGWAT BAGO MAG-SEND ULIT NG KASUNOD NA MESSAGE
             await asyncio.sleep(3)
             
-            # Dagdagan ang index para sa susunod na ikot, iba naman ang ise-send
             index += 1
 
         except Exception as e:
@@ -71,11 +76,9 @@ async def handle_index(request):
     return web.Response(text="Bot is running smoothly on Render!")
 
 async def main():
-    # Gagawa ng dummy HTTP server para kay Render
     app = web.Application()
     app.router.add_get('/', handle_index)
     
-    # Awtomatikong kukunin ang PORT na binibigay ni Render, kung wala default sa 8080
     port = int(os.environ.get("PORT", 8080))
     runner = web.AppRunner(app)
     await runner.setup()
@@ -84,8 +87,8 @@ async def main():
     print(f"Starting dummy web server on port {port} for Render...")
     await site.start()
     
-    # Sabay na patatakbuhin ang server at ang spam loop mo
     await loop_spam()
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
