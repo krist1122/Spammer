@@ -28,7 +28,7 @@ PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt;
 
 ₱599 || $10.16 &gt; 30𝘋𝘈𝘠𝘚 &lt; 
 
-𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>/<a href="https://t.me/TADOOOHULOL">@TADOOOHULOL</a>
+𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>/<a href="https://t.me/TADOOOHULOL"></a>
 💥 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘣𝘦 𝘳𝘦𝘴𝘦𝘭𝘭𝘦𝘳?</blockquote>"""
 
 # Tatlong templates na magsalitan sa 2-minute loop
