@@ -47,7 +47,7 @@ async def loop_spam():
             # ========================================================
             # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
             # ========================================================
-            await asyncio.sleep(120)
+            await asyncio.sleep(300)
 
             # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
             await bot.delete_message(
