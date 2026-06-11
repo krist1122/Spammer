@@ -21,17 +21,17 @@ Message: <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊�
 # 2. TEMPLATE PARA SA CODM
 CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎𝘈𝘙𝘌𝘕𝘈 𝘍𝘙𝘌𝘌 𝘛𝘙𝘐𝘈𝘓...</a>"""
 
-# 3. BAGONG TEMPLATE PARA SA PROMO (Naka-Quote gamit ang blockquote HTML tags)
+# 3. TEMPLATE PARA SA PROMO (Naka-Quote + Malinis na Italic Fonts)
 PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt; (𝘔𝘓𝘉𝘉 𝘝𝘪𝘗)
-
+  
    𝘍𝘜𝘓𝘓 𝘝𝘌𝘙𝘚𝘐𝘖𝘕 𝘞𝘐𝘛𝘏 𝘉𝘠𝘗𝘈𝘚𝘚!!
 
 ₱599 || $10.16 &gt; 30𝘋𝘈𝘠𝘚 &lt; 
 
-𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>
+𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>/<a href="https://t.me/TADOOOHULOL">@TADOOOHULOL</a>
 💥 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘣𝘦 𝘳𝘦𝘴𝘦𝘭𝘭𝘦𝘳?</blockquote>"""
 
-# Tatlo na silang magpapalit-palit ngayon sa listahan
+# Tatlong templates na magsalitan sa 2-minute loop
 ALL_MESSAGES = [MLBB_MESSAGE, CODM_MESSAGE, PROMO_MESSAGE]
 
 async def loop_spam():
@@ -53,7 +53,7 @@ async def loop_spam():
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
             # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
-            await asyncio.sleep(5)
+            await asyncio.sleep(120)
 
             # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
             await bot.delete_message(
@@ -62,7 +62,7 @@ async def loop_spam():
             )
             print(f"Deleted Message ID: {sent_message.message_id}")
 
-            # 4. AGWAT BAGO MAG-SEND ULIT NG KASUNOD NA MESSAGE
+            # 4. AGWAT BAGO MAG-SEND ULIT NG KASUNOD NA MESSAGE (3 seconds)
             await asyncio.sleep(3)
             
             index += 1
@@ -91,4 +91,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-    
+   
