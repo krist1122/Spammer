@@ -9,9 +9,9 @@ CHANNEL_ID = "@KAZELIDERMODS"
 bot = Bot(token=BOT_TOKEN)
 
 # 1. TEMPLATE PARA SA MLBB UPDATE
-MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v2.8.0</b>
+MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v2.9.0</b>
 
-<a href="https://t.me/KAZELIDERMODS/2001"> 📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 </a>v̶̶2̶.̶8̶.̶0̶
+<a href="https://t.me/KAZELIDERMODS/2001"> 📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 </a>v̶̶2̶.̶9.̶0̶
 ✓ ᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ ᴄʀᴀᴄᴋ 🤭
 ✓ ᴍʟʙʙ ᴠɪᴘ ᴋᴇʏ: ʙᴜʏ ɴᴏᴡ! ɴᴏ ꜰʀᴇᴇ!
 
