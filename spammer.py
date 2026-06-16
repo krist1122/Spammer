@@ -19,7 +19,7 @@ mlbb issues need help?
 Message: <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>"""
 
 # 2. TEMPLATE PARA SA CODM
-CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎𝘈𝘙𝘌𝘕𝘈 𝘍𝘙𝘌𝘌 𝘛𝘙𝘐𝘈𝘓...</a>"""
+CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎𝘈𝘙𝘌𝘕𝘈 𝘍𝘙𝘌𝘌 𝘛𝘙𝘐𝘈𝘓 𝘷2.4.0...</a>"""
 
 # 3. TEMPLATE PARA SA PROMO (Naka-Quote + Malinis na Italic Fonts)
 PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt; (𝘔𝘓𝘉𝘉 𝘝𝘪𝘗)
