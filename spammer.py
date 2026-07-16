@@ -9,17 +9,25 @@ CHANNEL_ID = "@KAZELIDERMODS"
 bot = Bot(token=BOT_TOKEN)
 
 # 1. TEMPLATE PARA SA MLBB UPDATE
-MLBB_MESSAGE = """<b>UPDATE FOR (VIP USER) ONLY v3.0.1</b>
+# 1. TEMPLATE PARA SA MLBB UPDATE (Naka-Collapsible Quote na)
+MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/KAZELIDERMODS/6270">Latest Update:
+Mobile Legends: Bang Bang
+v2.1.88.12027 || Mod v3.1.3</a>
 
-<a href="https://t.me/KAZELIDERMODS/1584"> 📁 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝗻𝘁𝗲𝗿𝗻𝗮𝗹 </a>v̶̶3̶.̶0̶.̶1̶
-✓ ᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ ᴄʀᴀᴄᴋ 🤭
-✓ ᴍʟʙʙ ᴠɪᴘ ᴋᴇʏ: ʙᴜʏ ɴᴏᴡ! ɴᴏ ꜰʀᴇᴇ!
+NEED KEY LOGIN ??? :
+For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">Phia Felicia</a>
 
-mlbb issues need help?
-Message: <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>"""
+No Free 🫪 GETS!?</i></blockquote>"""
 
 # 2. TEMPLATE PARA SA CODM
-CODM_MESSAGE = """<a href="https://t.me/KAZELIDERMODS/380">𝘊𝘖𝘋𝘔 𝘎𝘈𝘙𝘌𝘕𝘈 𝘍𝘙𝘌𝘌 𝘛𝘙𝘐𝘈𝘓 𝘷2.4.0...</a>"""
+CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/KAZELIDERMODS/380">Latest Update:
+Call of Duty v1.6.56
+Injector v2.7.6</a>
+
+NEED KEY LOGIN ??? :
+For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>
+
+<a href="https://slider-info-slidermod-register-deviceid.onrender.com/free">Try Free Key Here:</a></i></blockquote>"""
 
 # 3. TEMPLATE PARA SA PROMO (Naka-Quote + Malinis na Italic Fonts)
 PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt; (𝘔𝘓𝘉𝘉 𝘝𝘪𝘗)
@@ -53,7 +61,7 @@ async def loop_spam():
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
             # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
-            await asyncio.sleep(300)
+            await asyncio.sleep(3600)          
 
             # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
             await bot.delete_message(
