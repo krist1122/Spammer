@@ -4,7 +4,7 @@ from aiohttp import web
 from telegram import Bot, LinkPreviewOptions
 
 BOT_TOKEN = "8929884157:AAH2_l-iYqOOTUmMayvrSIIPGmEQba64sOk"
-CHANNEL_ID = "@KAZELIDERMODS"
+CHANNEL_ID = "@SliderModMenuMlbb"
 
 bot = Bot(token=BOT_TOKEN)
 
@@ -12,7 +12,7 @@ bot = Bot(token=BOT_TOKEN)
 # 1. TEMPLATE PARA SA MLBB UPDATE (Naka-Collapsible Quote na)
 MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/KAZELIDERMODS/6270">Latest Update:
 Mobile Legends: Bang Bang
-v2.1.88.12027 || Mod v3.1.4</a>
+v2.1.88.12027 || Mod v3.1.5</a>
 
 NEED KEY LOGIN ??? :
 For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">Phia Felicia</a>
