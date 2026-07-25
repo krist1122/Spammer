@@ -10,7 +10,7 @@ bot = Bot(token=BOT_TOKEN)
 
 # 1. TEMPLATE PARA SA MLBB UPDATE
 # 1. TEMPLATE PARA SA MLBB UPDATE (Naka-Collapsible Quote na)
-MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/KAZELIDERMODS/6270">Latest Update:
+MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/6270">Latest Update:
 Mobile Legends: Bang Bang
 v2.1.88.12027 || Mod v3.1.5</a>
 
@@ -20,7 +20,7 @@ For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_
 No Free 🫪 GETS!?</i></blockquote>"""
 
 # 2. TEMPLATE PARA SA CODM
-CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/KAZELIDERMODS/380">Latest Update:
+CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/380">Latest Update:
 Call of Duty v1.6.56
 Injector v2.7.6</a>
 
