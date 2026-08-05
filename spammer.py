@@ -19,9 +19,9 @@ For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_
 No Free 🫪 GETS!?</i></blockquote>"""
 
 # 2. TEMPLATE PARA SA CODM
-CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/380">Latest Update:
-Call of Duty v1.6.56
-Injector v2.7.8</a>
+CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/380">Latest Update: Call of Duty v1.6.56
+Garena Injector v2.7.8
+Global Injector v1.2.5</a>
 
 NEED KEY LOGIN ??? :
 For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">𝑷𝒉𝒊𝒂 𝑭𝒆𝒍𝒊𝒄𝒊𝒂</a>
