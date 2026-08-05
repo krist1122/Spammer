@@ -30,7 +30,7 @@ For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_
 
 # 3. BAGONG TEMPLATE PARA SA PROMO (May expandable quote at bagong link)
 PROMO_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/8279">Promo Available :
-For Mobile Legends (VIP)
+For Mobile Legends: Bang Bang
 Discounted price : up-to 50%</a>
 
 AVAIL NOW! :
