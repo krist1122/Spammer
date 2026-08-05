@@ -9,10 +9,9 @@ CHANNEL_ID = "@SliderModMenuMlbb"
 bot = Bot(token=BOT_TOKEN)
 
 # 1. TEMPLATE PARA SA MLBB UPDATE
-# 1. TEMPLATE PARA SA MLBB UPDATE (Naka-Collapsible Quote na)
 MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/6270">Latest Update:
 Mobile Legends: Bang Bang
-v2.1.88.12027 || Mod v3.1.5</a>
+v2.1.95.12053 || Mod v3.1.6</a>
 
 NEED KEY LOGIN ??? :
 For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">Phia Felicia</a>
@@ -29,21 +28,19 @@ For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_
 
 <a href="https://slider-info-slidermod-register-deviceid.onrender.com/free">Try Free Key Here:</a></i></blockquote>"""
 
-# 3. TEMPLATE PARA SA PROMO (Naka-Quote + Malinis na Italic Fonts)
-PROMO_MESSAGE = """<blockquote>𝘗𝘙𝘖𝘔𝘖 &lt; 30𝘋𝘈𝘠𝘚 &gt; (𝘔𝘓𝘉𝘉 𝘝𝘪𝘗)
-  
-   𝘍𝘜𝘓𝘓 𝘝𝘌𝘙𝘚𝘐𝘖𝘕 𝘞𝘐𝘛𝘏 𝘉𝘠𝘗𝘈𝘚𝘚!!
+# 3. BAGONG TEMPLATE PARA SA PROMO (May expandable quote at bagong link)
+PROMO_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/8279">Promo Available :
+For Mobile Legends (VIP)
+Discounted price : up-to 50%</a>
 
-₱599 || $10.16 &gt; 30𝘋𝘈𝘠𝘚 &lt; 
+AVAIL NOW! :
+For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">Phia Felicia</a></i></blockquote>"""
 
-𝘋𝘔: <a href="https://t.me/phia_maganda">@phia_maganda</a>/<a href="https://t.me/TADOOOHULOL"></a>
-💥 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘣𝘦 𝘳𝘦𝘴𝘦𝘭𝘭𝘦𝘳?</blockquote>"""
-
-# Tatlong templates na magsalitan sa 2-minute loop
+# Tatlong templates na magsalitan sa loop
 ALL_MESSAGES = [MLBB_MESSAGE, CODM_MESSAGE, PROMO_MESSAGE]
 
 async def loop_spam():
-    print("Spammer bot started (Alternating MLBB, CODM, and PROMO + 2 mins delay)...")
+    print("Spammer bot started (Alternating MLBB, CODM, and PROMO)...")
     index = 0
     
     while True:
@@ -60,10 +57,10 @@ async def loop_spam():
             )
             print(f"Message sent! (Index: {index} | ID: {sent_message.message_id})")
 
-            # 2. BIBILANG NG 2 MINUTO (120 SECONDS) BAGO BURAHIN
+            # 2. BIBILANG NG ORAS BAGO BURAHIN (3600 seconds = 1 hour)
             await asyncio.sleep(3600)          
 
-            # 3. BURAHIN PAGKATAPOS NG 2 MINUTO
+            # 3. BURAHIN PAGKATAPOS
             await bot.delete_message(
                 chat_id=CHANNEL_ID,
                 message_id=sent_message.message_id
@@ -99,4 +96,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-   
