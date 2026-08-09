@@ -11,7 +11,7 @@ bot = Bot(token=BOT_TOKEN)
 # 1. TEMPLATE PARA SA MLBB UPDATE
 MLBB_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/6270">Latest Update:
 Mobile Legends: Bang Bang
-v2.1.95.12053 || Mod v3.1.6</a>
+v2.1.95.12053 || Mod v3.1.7</a>
 
 NEED KEY LOGIN ??? :
 For inquiries and availment, send a direct message ~ <a href="https://t.me/phia_maganda">Phia Felicia</a>
@@ -20,7 +20,7 @@ No Free 🫪 GETS!?</i></blockquote>"""
 
 # 2. TEMPLATE PARA SA CODM
 CODM_MESSAGE = """<blockquote expandable="true"><i><a href="https://t.me/SliderModMenuMlbb/380">Latest Update: Call of Duty v1.6.56
-Garena Injector v2.7.9
+Garena Injector v2.8.0
 Global Injector v1.2.5</a>
 
 NEED KEY LOGIN ??? :
